@@ -1,4 +1,4 @@
-![Python package](https://github.com/HMMA238-2020/biketrauma/workflows/Python%20package/badge.svg)
+![Python package](https://github.com/HMMA238-2020/biketrauma_doc/workflows/Python%20package/badge.svg)
 
 # biketrauma
 

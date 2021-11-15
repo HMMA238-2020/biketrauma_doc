@@ -32,3 +32,9 @@ We can display some codes
    :caption: API doc
 
    api/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Previsions:
+   
+   _static/index

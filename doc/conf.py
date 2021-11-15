@@ -48,6 +48,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx_gallery.gen_gallery',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -193,3 +194,15 @@ intersphinx_mapping = {'https://docs.python.org/': None}
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+from sphinx_gallery.sorting import FileNameSortKey
+
+sphinx_gallery_conf = {
+     # path to your examples scripts
+    'examples_dirs': ['../script',],
+     # path where to save gallery generated examples
+    'gallery_dirs': ['_auto_scripts'],
+    # order of the Gallery
+    'within_subsection_order': FileNameSortKey,
+}
+

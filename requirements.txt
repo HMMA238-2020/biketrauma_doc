@@ -3,6 +3,5 @@ pygal_maps_fr
 pooch
 pandas
 numpy
-hashlib
 pygal
 setuptools

@@ -37,4 +37,4 @@ We can display some codes
    :maxdepth: 2
    :caption: Previsions:
    
-   _static/index
+   _auto_scripts/index

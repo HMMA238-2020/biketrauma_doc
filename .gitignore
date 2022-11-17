@@ -8,4 +8,6 @@ dist
 *.pyc
 
 _build
+_auto_scripts
+_static
 htmlcov

@@ -1,10 +1,8 @@
 tqdm
 pygal_maps_fr
 pooch
-os
 pandas
 numpy
-sys
 hashlib
 pygal
 setuptools

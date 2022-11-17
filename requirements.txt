@@ -1,5 +1,10 @@
-tqdm==4.43.0
-pandas==0.24.2
-pygal==2.4.0
-download==0.3.4
-numpy==1.16.5
+tqdm
+pygal_maps_fr
+pooch
+os
+pandas
+numpy
+sys
+hashlib
+pygal
+setuptools

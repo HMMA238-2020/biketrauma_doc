@@ -8,20 +8,36 @@ import lzma
 class Load_db:
     """
     This class download the compressed biketrauma dataset.
-
-    Parameters:
-    -----------
-
-    url : (string) path to the data
-    target_name : (string) local path where data is saved
     """
 
     def __init__(self, url=url_db, target_name=path_target):
+        """
+        Parameters
+        ----------
+
+        url : (string) path to the data
+
+        target_name : (string) local path where data is saved
+        """
         path, fname_compressed = os.path.split(path_target)
         pooch.retrieve(url, path=path, fname=fname_compressed, known_hash=None)
         self.fname = self.unxz(path_target)
 
     def unxz(self, fname_compressed):
+        """
+        Uncompress the xz file
+
+        Parameters
+        ----------
+
+        fname_compressed : (string) name of the compressed file
+
+        Returns
+        -------
+        
+        fname_uncompressed : (string) name of the uncompressed file
+
+        """
         fname_uncompressed = fname_compressed[:-3]
         if os.path.exists(fname_uncompressed):
             return fname_uncompressed
@@ -38,6 +54,9 @@ class Load_db:
 
 
     def save_as_df(self):
+        """
+        Import data to a Pandas :class:`pandas.DataFrame`. See <https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html>
+        """
         df_bikes = pd.read_csv(
             self.fname,
             na_values="",

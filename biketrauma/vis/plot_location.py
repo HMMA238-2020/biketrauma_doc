@@ -9,21 +9,24 @@ def plot_location(gd):
       
       .. math::
           a_i~=~f(x_i)~&=~ \log \sum_{j=1}^{N} \exp(-\gamma\cdot\|x_i-y_j\|^2)\cdot b_j \\\\
-             ~&=~ \log \sum_{j=1}^{N} \exp\\big(-\gamma\cdot\|x_i-y_j\|^2 \,+\, \log(b_j) \\big).
+             ~&=~ \log \sum_{j=1}^{N} \exp\big(-\gamma\cdot\|x_i-y_j\|^2 \,+\, \log(b_j) \big).
 
   Input
   -----
-    gd: I don't remenber the type of gd. 
+    gd : I don't remenber the type of gd. 
 
-  Output
-  ------
-    nothing...
+  Returns
+  -------
+
+    `None`
 
   Example
   -------
 
-  >> import biketrauma
-  >> biketrauma.vis.plot_location(blahblha)
+  .. code-block:: language
+
+     >> import biketrauma
+     >> biketrauma.vis.plot_location(blahblha)
 
   """
     fr_chart = pygal.maps.fr.Departments(human_readable=True)
